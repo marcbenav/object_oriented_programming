@@ -5,9 +5,6 @@ class Cat
     @meal_time = meal_time
 end
 
-Rodney = Cat.new("Rodney", "Mariner's Catch", 21)
-Herschel = Cat.new("Herschel", "Chicken Dinner", 0)
-
 def eats_at
   if @meal_time > 12
     return "#{@meal_time - 12} PM"
@@ -18,4 +15,6 @@ def eats_at
   end
 end
 
+Rodney = Cat.new("Rodney", "Mariner's Catch", 21)
+Herschel = Cat.new("Herschel", "Chicken Dinner", 0)
 end
